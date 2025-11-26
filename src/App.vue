@@ -1,8 +1,8 @@
 <template>
   <div id="app" class="container-fluid">
-    <img :src="logo.imgSrc_1" alt="Logo" />
-    <img :src="logo.imgSrc_2" alt="Logo" />
-    <img :src="logo.imgSrc_3" alt="Logo" />
+    <div class="icon_1"></div>
+    <div class="icon_2"></div>
+    <div class="icon_3"></div>
     <router-view/>
   </div>
 </template>
@@ -26,5 +26,23 @@ export default {
 </script>
 
 <style>
+:root {
+  --icon-ICON-url: url("~@/assets/ICON.svg");
+}
 
+.icon_1 {
+  width: 24px;
+  height: 24px;
+  background: var(--icon-ICON-url) -623px -453px no-repeat;
+}
+.icon_2 {
+  width: 24px;
+  height: 24px;
+  background: var(--icon-ICON-url) -264px -360px no-repeat;
+}
+.icon_3 {
+  width: 24px;
+  height: 24px;
+  background: var(--icon-ICON-url) -385px -240px no-repeat;
+}
 </style>
