@@ -3,6 +3,9 @@
     <div class="icon_1"></div>
     <div class="icon_2"></div>
     <div class="icon_3"></div>
+    <img :src="logo.imgSrc_1" alt="">
+    <img :src="logo.imgSrc_2" alt="">
+    <img :src="logo.imgSrc_3" alt="">
     <router-view/>
   </div>
 </template>
@@ -13,9 +16,9 @@ export default {
   data() {
     return {
       logo: {
-        imgSrc_1: require('./assets/a.jpg'),
-        imgSrc_2: require('./assets/a.jpg'),
-        imgSrc_3: require('./assets/a.jpg'),
+        imgSrc_1: require('./assets/ICON.svg'),
+        imgSrc_2: require('./assets/ICON.svg'),
+        imgSrc_3: require('./assets/ICON.svg'),
       }
     }
   },
@@ -44,5 +47,9 @@ export default {
   width: 24px;
   height: 24px;
   background: var(--icon-ICON-url) -385px -240px no-repeat;
+}
+
+.img {
+  width: 100px;
 }
 </style>
