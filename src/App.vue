@@ -13,11 +13,14 @@ export default {
   data() {
     return {
       logo: {
-        imgSrc_1: require('./assets/logo.png'),
-        imgSrc_2: require('./assets/logo.png'),
-        imgSrc_3: require('./assets/logo.png'),
+        imgSrc_1: require('./assets/a.jpg'),
+        imgSrc_2: require('./assets/a.jpg'),
+        imgSrc_3: require('./assets/a.jpg'),
       }
     }
+  },
+  mounted() {
+    console.log(this.logo.imgSrc_1);
   }
 }
 </script>
